@@ -10,17 +10,18 @@ import { RecipeService } from '../recipe.service';
   styleUrls: ['./recipe-edit.component.css']
 })
 export class RecipeEditComponent implements OnInit {
+  i: number;
   id: number;
   editMode = false;
   recipeForm: FormGroup;
 
-  get recipeControls() {
-    return (this.recipeForm.get('ingredients') as FormArray).controls
-  }
-
   constructor(private route: ActivatedRoute,
               private recipeService: RecipeService,
               private router: Router) {
+  }
+
+  get ingredientsControls() {
+    return (this.recipeForm.get('ingredients') as FormArray).controls;
   }
 
   ngOnInit() {

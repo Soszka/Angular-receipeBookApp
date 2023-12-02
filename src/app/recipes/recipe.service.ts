@@ -12,15 +12,21 @@ export class RecipeService {
   private recipes: Recipe[] = [
     new Recipe(
       'Tasty Schnitzel',
-      'A super-tasty Schnitzel - just awesome!',
-      'https://upload.wikimedia.org/wikipedia/commons/7/72/Schnitzel.JPG',
+      'A super-tasty Schnitzel',
+      'https://i.postimg.cc/vBt8pXbZ/pexels-lukas-1352270.jpg',
       [new Ingredient('Meat', 1), new Ingredient('French Fries', 20)]
     ),
     new Recipe(
-      'Big Fat Burger',
-      'What else you need to say?',
-      'https://upload.wikimedia.org/wikipedia/commons/b/be/Burger_King_Angus_Bacon_%26_Cheese_Steak_Burger.jpg',
+      'Big  Burger',
+      'Awesome huge Burger',
+      'https://i.postimg.cc/DwSZ8qdx/pexels-narda-yescas-1566837.jpg',
       [new Ingredient('Buns', 2), new Ingredient('Meat', 1)]
+    ),
+    new Recipe(
+      'Mega Pizza',
+      'Best Pizza in Town',
+      'https://i.postimg.cc/HxgsZFGN/pexels-valeria-boltneva-1639562.jpg',
+      [new Ingredient('cheese', 1), new Ingredient('mushrooms', 4)]
     )
   ];
  
